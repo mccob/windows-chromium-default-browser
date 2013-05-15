@@ -58,26 +58,19 @@ Windows Registry Editor Version 5.00
 @="\"C:\\chromium\\chrome-win32\\chrome.exe\""
 
 
-
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML]
-
 "URL Protocol"=""
 @="Chrome HTML Document"
-
 
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\DefaultIcon]
 @="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe,0"
 
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\shell]
 
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\shell\open]
-
 
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\shell\open\command]
