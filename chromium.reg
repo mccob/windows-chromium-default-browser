@@ -1,0 +1,85 @@
+Windows Registry Editor Version 5.00
+
+; TODO before adding to registry : Replace C:\\chromium\\chrome-win32\\chrome.exe with the path to your chromium exe
+; double \ in the path
+; after double click on reg file for adding to registry
+; after : go into windows default program parameters and set Chromimum as default
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"Chromium"="Software\\Clients\\StartMenuInternet\\Chromium\\Capabilities"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium]
+@="Chromium"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\Capabilities]
+"ApplicationName"="Chromium"
+"ApplicationIcon"="C:\\chromium\\chrome-win32\\chrome.exe,0"
+"ApplicationDescription"="Chromium is a fast web browser for Windows."
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\Capabilities\FileAssociations]
+".xhtml"="ChromiumHTML"
+".xht"="ChromiumHTML"
+".shtml"="ChromiumHTML"
+".html"="ChromiumHTML"
+".htm"="ChromiumHTML"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\Capabilities\Startmenu]
+"StartMenuInternet"="Chromium"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\Capabilities\URLAssociations]
+"webcal"="ChromiumHTML"
+"urn"="ChromiumHTML"
+"tel"="ChromiumHTML"
+"smsto"="ChromiumHTML"
+"sms"="ChromiumHTML"
+"nntp"="ChromiumHTML"
+"news"="ChromiumHTML"
+"mms"="ChromiumHTML"
+"mailto"="ChromiumHTML"
+"irc"="ChromiumHTML"
+"https"="ChromiumHTML"
+"http"="ChromiumHTML"
+"ftp"="ChromiumHTML"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\DefaultIcon]
+@="C:\\chromium\\chrome-win32\\chrome.exe,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\InstallInfo]
+"IconsVisible"=dword:00000001
+"ShowIconsCommand"="\"C:\\chromium\\chrome-win32\\chrome.exe" --show-icons"
+"HideIconsCommand"="\"C:\\chromium\\chrome-win32\\chrome.exe" --hide-icons"
+"ReinstallCommand"="\"C:\\chromium\\chrome-win32\\chrome.exe" --make-default-browser"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\shell]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\shell\open]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\Chromium\shell\open\command]
+@="\"C:\\chromium\\chrome-win32\\chrome.exe\""
+
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML]
+
+"URL Protocol"=""
+@="Chrome HTML Document"
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\DefaultIcon]
+@="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe,0"
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\shell]
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\shell\open]
+
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ChromiumHTML\shell\open\command]
+@="\"C:\\chromium\\chrome-win32\\chrome.exe\" -- \"%1\""
+
